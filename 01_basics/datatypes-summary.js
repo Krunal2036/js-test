@@ -25,3 +25,19 @@ let obj ={
 const myFuntion = function(){
     // console.log("hello world!");
 }
+
+// *********************Stack(primitive) & Heap(non-rpimitive)*******************************
+
+let myCode = "democode"
+let coder = myCode
+coder = "coder"
+
+console.log(myCode);
+console.log(coder);
+
+let user = {
+    email : 'user@g.com',
+    userUpi: 'user@xyl'
+}
+let user2 = user
+console.log(user2);
