@@ -11,7 +11,7 @@ const bigInt = 123544n;
 const id = Symbol('123');
 const anotherId = Symbol('123');
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 // non primitive (reference)
 // array, object, function
@@ -23,5 +23,5 @@ let obj ={
 }
 
 const myFuntion = function(){
-    console.log("hello world!");
+    // console.log("hello world!");
 }
