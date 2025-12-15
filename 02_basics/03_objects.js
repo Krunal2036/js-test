@@ -11,8 +11,8 @@ const obj = {
     [Sym]: "id"
 }
 
-// console.log(obj["Full Name"], obj.address.city,obj[Sym]);
-// console.log(typeof obj[Sym]);
+console.log(obj["Full Name"], obj.address.city,obj[Sym]);
+console.log(typeof obj[Sym]);
 
 obj.email = "krunal@google.com"
 // Object.freeze(obj)
@@ -23,6 +23,6 @@ obj.greeting = function(){
     console.log(`Hello, My name is ${this.name}`);
 }
 console.log(obj.greeting);
-console.log(boj.greeting());
+console.log(obj.greeting());
 
 //***************Object method **************//
