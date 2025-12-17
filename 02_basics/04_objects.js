@@ -7,6 +7,11 @@ tinderUser.isLoggedIn = false;
 
 // console.log(tinderUser);
 
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(tinderUser.hasOwnProperty("name"));
+
 //***************Object method **************// 
 const regularUser = {
     email: "ksr@g.com",
@@ -52,11 +57,7 @@ const myUser = [
     },
 ]
 myUser[1].userName; // "ram"
-
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
-// console.log(tinderUser.hasOwnProperty("name"));
+// console.log(myUser[1].userName);
 
 const course = {
     courseName: "js basics",
@@ -65,6 +66,6 @@ const course = {
 }
 
 const {courseName, price, courseInstructor :Instructor } = course;
-console.log(courseName);
-console.log(price);
-console.log(Instructor);
+// console.log(courseName);
+// console.log(price);
+// console.log(Instructor);
