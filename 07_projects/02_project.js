@@ -16,6 +16,19 @@ form.addEventListener('submit', function (e) {
   } else {
     const bmi = (weight / ((height * height) / 10000)).toFixed(2);
     //show the result
-    results.innerHTML = `<span>${bmi}</span>`;
+    // results.innerHTML = `<span>${bmi}</span>`;
+
+    if (bmi < 18.6) {
+      results.innerHTML = `<span> <u> ${bmi} </u>Your BMI Weight is Less than 18.6, so You are Under Weight.</span>`;
+    } else if (bmi >= 18.6 && bmi <= 24.9) {
+      results.innerHTML = `<span> <u> ${bmi} </u>Your BMI Weight is in normal range ( 18.6-24.9 ), So Your are Feet.</span>`;
+    } else if (bmi > 24.9) {
+      results.innerHTML = `<span> <u> ${bmi} </u>Your BMI Weight is more than 24.9, so You are over Weight.</span>`;
+    }
+    // switch (bmi) {
+    //   case bmi < 18.6:
+    //     results.innerHTML = `<span>Your BMI Weight is Less than <u> ${bmi} </u>, so You are Under Weight. </span>`;
+    //     break;
+    // }
   }
 });
